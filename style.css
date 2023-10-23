@@ -23,6 +23,7 @@ a {
 body {
     background-color: var(--background);
     position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -215,7 +216,7 @@ header p {
     transform: translateX(-100%);
 }
 
-.header__square:nth-of-type(4)::after {
+/* .header__square:nth-of-type(4)::after {
     position: absolute;
     content: 'PORTFOLIO';
     transform: translateX(50px);
@@ -224,10 +225,10 @@ header p {
     font-weight: 800;
     color: var(--square-bg);
     z-index: -100;
-} 
+}  */
 
 
-.header__square:nth-of-type(6)::after {
+/* .header__square:nth-of-type(6)::after {
     content: 'PORTFOLIO';
     position: absolute;
     top: -250px;
@@ -238,9 +239,8 @@ header p {
     color: var(--square-bg);
     transform: rotate(-90deg);
     z-index: -20;
-    /* border: 1px solid red; */
     
-}
+} */
 
 .header__square:nth-of-type(21),
 .header__square:nth-of-type(5) {
@@ -264,7 +264,6 @@ header p {
 
     .logo h3 {
         font-size: 20px;
-        margin-left: 15px;
     }
 
     .display__image {
