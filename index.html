@@ -8,126 +8,36 @@
     <title>Alfrederick De Chavez</title>
 </head>
 <body>
-    <header>
-        <p>MyPortfolio.</p>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-    
-    <section id="home">
-        <div class="home-left">
-            <p class="greet">Hi I'm</p>
-            <h2 class="name">Alfrederick De Chavez</h2>
-            <p class="position">IT Fresh Graduate</p>
-            <p class="desc">I am dedicated and self-motivated IT enthusiast with 
-                proven and tested programming and analytical 
-                skills. I am always willing to learn new skills and build good 
-                relationship with others
-            </p>
-            <a class="download-cv" href="Resume.pdf" download target="_blank">Download Resume</a>
-        </div>
-        <div class="display-picture"></div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/alfrederick.dechavez.73" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="https://www.instagram.com/adchvz" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="https://github.com/AlfrederickDeChavez" target="_blank"><i class='bx bxl-github' ></i></a>
-        </div>
-    </section>
-
-
-    <section id="about">
-        <h1>About Me</h1>
-
-        <div class="about-content">
-            <div class="formal"></div>
-            <div class="information">
-                <i class='bx bxs-quote-left'></i>
-                <p>I grew up at San Jose, Batangas. I am 22 years old. I am a fresh graduate of <b>BS Information Technology Major in Business Analytics</b> at <b>Batangas State University - The National Engineering University</b>.
-                <br>
-                <br>
-                I am knowledgeable in building web applications and designing user interfaces. I also develop mobile applications.
-                <br><br>
-                I believe that self-discipline is an important factor in order to achieve whatever objectives I have.
-                </p>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h3>adchvz.</h3>
             </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h1>Software Skills</h1>
-        <div class="skill-grid">
-            <div class="figma">
-                <i class='bx bxl-figma' ></i>
-                <p>Figma</p>
-            </div>
-            <div class="html">
-                <i class='bx bxl-html5'></i>
-                <p>HTML</p>
-            </div>
-            <div class="css">
-                <i class='bx bxl-css3' ></i>
-                <p>CSS</p>
-            </div>
-            <div class="javascript">
-                <i class='bx bxl-javascript' ></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="react">
-                <i class='bx bxl-react'></i>
-                <p>React</p>
-            </div>
-            <div class="python">
-                <i class='bx bxl-python' ></i>
-                <p>Python</p>
-            </div>
-            <div class="django">
-                <i class='bx bxl-django' ></i>
-                <p>Django</p>
-            </div>
-            <div class="git">
-                <i class='bx bxl-git' ></i>
-                <p>Git</p>
-            </div>
-            .
-        </div>
-    </section>
-
-
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-content">
-            <div class="nature-buddy-card">
-                <img src="images/nature-buddy-logo.png" alt="">
-                <p><a href="https://github.com/AlfrederickDeChavez/NatureBuddy" target="_blank">Nature Buddy</a></p>
-                <p>A mobile application that will allow people to share their actions and ideas in helping the environment.</p>
-                <div class="code-link">
-                    <a href="https://www.figma.com/file/ks79TM0KaAbEBceHQtk5th/NatureBuddy?type=design&mode=design&t=ECv7TLpeiPUcfcwq-0" target="_blank">Design</a>
-                    <a href="https://github.com/AlfrederickDeChavez/NatureBuddy" target="_blank">Code</a>
+            <ul class="nav__links">
+                <li class="nav__link"><a href="#">About</a></li>
+                <li class="nav__link"><a href="#">Skills</a></li>
+                <li class="nav__link"><a href="#">Works</a></li>
+                <li class="nav__link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <div class="display__image">
+                    <img src="./images/dp.jpg">
+                    <div id="image__grid">
+                    </div>
                 </div>
-            </div>
-            <div class="balance-card">
-                <img src="images/balance-logo.png" alt="">
-                <p><a href="https://play.google.com/store/apps/details?id=com.alfrederick_de_chavez.balance_app" target="_blank">Balance</a></p>
-                <p>A mobile application for monitoring and evaluating 
-                    users nutrients consumption.</p>
-                <div class="code-link">
-                    <a href="https://www.figma.com/file/6BaiLxH68QSoLjIwBQP0Ev/Balance?type=design&node-id=0-1&mode=design&t=ECv7TLpeiPUcfcwq-0" target="_blank">Design</a>
-                    <a href="https://github.com/AlfrederickDeChavez/balance" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-        <div class="contact-links">
-            <p><i class='bx bxs-envelope'></i> dechavezalfrederick@gmail.com</p>
-            <p><i class='bx bxs-phone'></i> 0975-613-3054</p>
-        </div>
-    </section>
 
+                <h4>Hi! I am <span>Alfrederick.</span></h4>
+                <h3>Software Developer</h3>
+                <p>My task is building automated tools to make your job easy.</p>
+
+                <a class="download__cv" href="Resume.pdf" download target="_blank">Download Resume</a>
+            </header>
+            <div id="header__grid">
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
