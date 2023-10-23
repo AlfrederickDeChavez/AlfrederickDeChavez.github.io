@@ -247,15 +247,6 @@ header p {
     border: 1px solid rgb(82, 78, 78);
 }
 
-/* TABLET */
-
-@media (width < 960px ){
-    .header__square:nth-of-type(6)::after {
-        content: 'PORTFOLIO';
-        left: -180px;
-        font-size: 150px
-    }
-}
 /* MOBILE PHONES */
 @media (width < 720px) {
     .container {
