@@ -24,6 +24,10 @@ body {
     background-color: var(--background);
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
@@ -91,6 +95,7 @@ nav {
 main {
     position: relative;
     height: 90vh;
+    margin-bottom: 40px;
 }
 
 header {
@@ -263,7 +268,7 @@ header p {
     justify-content: center;
     flex-direction: column;
     margin-top: 10px;
-    
+    position: relative;
 }
 
 .about__title {
@@ -312,10 +317,215 @@ header p {
     font-size: 30px;
 }
 
+.skills {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skills__title {
+    font-family: 'Keania One';
+    color: #FFF;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.skills__content {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.webapp__title, .ui__title, .mobile__title {
+    font-size: 30px;
+    font-family: 'League Spartan';
+    color: #d6d3d3;
+    font-weight: 700;
+    position: relative;
+    margin: 30px 0;
+
+}
+
+.webapp__title::before {
+    content: 'WEB DEVELOPMENT';
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'League Spartan';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--square-bg);
+    z-index: -9;
+}
+
+.ui__title::before {
+    content: 'UI/UX DESIGN';
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'League Spartan';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--square-bg);
+    z-index: -9;
+}
+
+.mobile__title::before {
+    content: 'MOBILE APPLICATION';
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'League Spartan';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--square-bg);
+    z-index: -9;
+}
+
+.webapp__container, .ui__container, .mobile__container, .analytics__container  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 5px rgba(0, 0 ,0, 0.02);
+    min-height: 200px;
+}
+
+.skill i {
+    color: #FFF;
+    font-size: 100px;
+}
+
+.skill p {
+    font-family: 'Keania One';
+    font-size: 20px;
+    color: #FFF;
+    
 
 
+}
+
+.works {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+.works__title {
+    font-family: 'Keania One';
+    color: #FFF;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.works__content {
+    width: 100%;
+}
+
+.nature__buddy {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.nB__logo__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+
+}
+
+.nB__logo__box img {
+    width: 40%;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.nB__logo__box .shadow {
+    width: 40%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: rgb(180, 175, 175);
+    margin-top: 30px;
+}
+
+.nature__buddy__desc {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.work__name {
+    font-family: 'League Spartan';
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 600;
+    width: 100%;
+}
+
+.nature__buddy__desc p {
+    font-family: 'League Spartan';
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 400;
+    width: 90%;
+}
+
+.work__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.work__links a {
+    font-family: 'League Spartan';
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 400;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-font);
+}
 
 
+@media (width < 960px) {
+
+.webapp__container, .ui__container, .mobile__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.nB__logo__box img {
+    width: 60%;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+}
 
 
 
@@ -404,6 +614,49 @@ header p {
         text-align: center;
         width: 90%;
     }
+
+
+    .webapp__container, .ui__container, .mobile__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .skill {
+        min-height: 150px;
+    }
+
+    .skill i {
+        font-size: 80px;
+    }
+    
+    .skill p {
+        font-size: 15px;
+        
+    }
+
+    .nature__buddy {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .work__name {
+        text-align: center;
+    }
+
+    .nB__logo__box img {
+        width: 80%;
+    }
+
+    .nature__buddy__desc p {
+        text-align: center;
+    }
+
+    .work__links {
+        justify-content: center;
+    }
+
     
 
 }
@@ -437,5 +690,25 @@ header p {
         margin-top: 20px;
         border-radius: 5px;
         font-size: 15px;
+    }
+
+
+    .webapp__container, .ui__container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .skill {
+        min-height: 100px;
+    }
+
+    .skill i {
+        font-size: 60px;
+    }
+    
+    .skill p {
+        font-size: 15px;
+        
     }
 }
